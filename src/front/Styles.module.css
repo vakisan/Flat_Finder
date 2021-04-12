@@ -1,0 +1,12 @@
+.background {
+  background-color: blue;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.input-sm {
+  margin-top: 10px;
+  height: 10px;
+}

@@ -1,0 +1,549 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  background: #eeecec;
+}
+.card {
+  margin-bottom: 1rem;
+}
+
+.card_hover1 {
+  height: 200%;
+  z-index: 2;
+  opacity: 0.7;
+}
+
+.card_hover2 {
+  height: 200%;
+  z-index: 5;
+  opacity: 0.7;
+}
+
+.card_hover1:hover {
+  animation-name: swivel;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card_hover2:hover {
+  animation-name: swivel;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes swivel {
+  0% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1040px;
+  }
+}
+@media (min-width: 0px) and (max-width: 882px) {
+  .mt-xs-5 {
+    margin-top: 2em;
+  }
+  .mb-xs-5 {
+    margin-top: 1em;
+  }
+  .feedback {
+    font-size: 1.5em !important;
+  }
+  .section-shaped {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background: #3c7e94 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .card_hover1 {
+    height: 100%;
+    z-index: 2;
+  }
+
+  .card_hover2 {
+    height: 100%;
+    z-index: 5;
+  }
+
+  .card_hover1:hover {
+    animation-name: swivel;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .card_hover2:hover {
+    animation-name: swivel;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.navbar-pre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  z-index: 2;
+}
+.navbar-brand {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.75em;
+  color: #fff !important;
+}
+.navbar-brand-post {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #3c7e94 !important;
+}
+.navbar-item,
+.nav-link {
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: normal;
+  letter-spacing: 0;
+  transition: all 0.15s linear;
+}
+.nav-custom {
+  position: fixed;
+  width: 100%;
+}
+.nav-link-custom {
+  color: #fff !important;
+  font-size: 1.2rem;
+}
+.nav-link-custom:hover {
+  color: #dadada !important;
+}
+.section {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.section-ad {
+  background: #eeecec;
+}
+
+.section-shaped {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background: #3c7e94;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+.section-login {
+  background: #eeecec;
+}
+
+.landing-container {
+  padding-top: 6rem !important;
+}
+.gradient-landing {
+  background: #348f50;
+  background: -webkit-linear-gradient(to right, #56b4d3, #348f50);
+  background: linear-gradient(to right, #56b4d3, #348f50);
+  color: #fff;
+  border-radius: 25px;
+}
+.gradient-landing-ad {
+  background: #f2994a;
+  background: -webkit-linear-gradient(to right, #f2c94c, #f2994a);
+  background: linear-gradient(to right, #f2c94c, #f2994a);
+  color: #fff;
+  border-radius: 25px;
+}
+.gradient-landing-box {
+  background: #f8f9fa;
+  border-radius: 25px;
+}
+.register {
+  text-transform: uppercase;
+  background: #fff;
+  color: #000;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+.register:hover {
+  text-transform: uppercase;
+  background: #e2e2e2;
+  color: #000;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  transform: translateY(-2px);
+  transition: 15ms;
+}
+
+.login {
+  text-transform: uppercase;
+  background: #56b4d3;
+  color: #fff;
+  border: 0;
+  padding: 1em;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  width: 100%;
+}
+.login:hover {
+  text-transform: uppercase;
+  background: #89cbe0;
+  color: #fff;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  transform: translateY(-2px);
+  transition: 15ms;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1.25rem + 2px);
+  padding: 0.625rem 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8898aa;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #cad1d7;
+  border-radius: 0.25rem;
+  box-shadow: none;
+}
+.section-feedback {
+  height: 500px;
+  background: url("https://rigbyandrigby.com/wp-content/uploads/2019/08/115_Ap3-6-Charles-Street-HR-4-1800x1170.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+p {
+  font-family: "Raleway", sans-serif !important;
+}
+.steps {
+  border: 1px solid #338a4d;
+  border-radius: 50%;
+  width: 85px;
+  padding: 1em;
+  text-align: center;
+  margin: auto;
+  background: #348f50;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.feedback {
+  font-size: 1.75em;
+  font-weight: 600;
+  color: rgb(85, 84, 84);
+}
+.feedback-name {
+  font-size: 1.25em;
+  color: rgb(85, 84, 84);
+}
+.feedback-dp {
+  height: 150px;
+  width: 150px;
+}
+.login-card {
+  background: #f4f5f7;
+}
+.footer-custom {
+  background: #eeecec;
+  padding: 2em;
+}
+h2.footer {
+  color: #3c7e94;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.75em;
+}
+
+.first {
+  animation-name: fadeIn;
+  animation-direction: alternate;
+}
+
+.second {
+  animation-name: fadeIn;
+  animation-direction: alternate;
+  animation-delay: 0.1s;
+}
+
+.third {
+  animation-name: fadeIn;
+  animation-direction: alternate;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: scale(0.8) translateX(-50%) rotate(5deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(0.7) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: scale(0.8) translateX(50%) rotate(5deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(0.7) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.screenshot_img {
+  border-radius: 5pt;
+  max-width: 500px;
+}
+
+.screenshot1_1_text {
+  font-size: x-large;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  top: 100pt;
+  border-radius: 10pt;
+  animation-name: fadeInRight;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.screenshot1_1_text_bye {
+  font-size: x-large;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  top: 100pt;
+  border-radius: 10pt;
+  animation-name: fadeOutRight;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.screenshot2_2_text {
+  font-size: x-large;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  border-radius: 10pt;
+  margin-top: -40%;
+  animation-name: fadeInRight;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.screenshot2_2_text_bye {
+  display: none;
+  font-size: x-large;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  border-radius: 10pt;
+  margin-top: -40%;
+  animation-name: fadeOutRight;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#login {
+  height: 100vh;
+}
+
+#map {
+  height: 100%;
+}
+.chat {
+  width: 70%;
+}
+.chat-body {
+  padding: 0.5em;
+}
+.chat-me {
+  float: right;
+  background: lightblue;
+}
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+  background: #3c7e94;
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+.row.row-divider {
+  overflow: hidden;
+}
+.row.row-divider > div[class^="col-"] {
+  padding-bottom: 100px;
+  margin-bottom: -100px;
+  border-left: 1px solid #cac8c8;
+}
+.row.row-divider div[class^="col-"]:first-child {
+  border-left: none;
+}
+.row.row-divider div[class^="col-"]:last-child {
+  border-right: none;
+}
+.login-divider {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #3c7e94 !important;
+  text-transform: uppercase;
+}
+.nav-tabs .nav-link {
+  margin-bottom: -1px;
+  border: 0;
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+}
+.nav-tabs > li {
+  float: none;
+  display: inline-block;
+  zoom: 1;
+}
+.nav-tabs {
+  border-bottom: 0;
+  text-align: center;
+}
+
+.nav-tabs .nav-link {
+  padding: 1.5em;
+  border: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: rgb(187, 187, 187);
+  margin: auto;
+}
+.nav-link:hover {
+  border: 0;
+  background: none;
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-item:focus {
+  border: 0;
+  border-radius: 0;
+}
+a.active {
+  background: #eeecec !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  color: black !important;
+}
+a:hover {
+  border-bottom: 0 !important;
+  text-decoration: none;
+}
+.tab-pane.active {
+  animation: slide-down 0.8s ease-out;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-ad {
+  height: 400px;
+  border-radius: 25px;
+}
+
+.parallax {
+  overflow: scroll;
+  /* The image used */
+  background-image: url("https://rigbyandrigby.com/wp-content/uploads/2019/08/115_Ap3-6-Charles-Street-HR-4-1800x1170.jpg");
+  /* Set a specific height */
+  min-height: 100vh;
+  margin-top: -20%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: -50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
