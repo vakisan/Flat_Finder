@@ -39,7 +39,7 @@ const MainNavbar = (props) => {
           <Nav className="align-items-lg-center" navbar>
               <NavItem>
                 <NavLink to="/Listing" tag={Link} onClick={new User().Logout}>
-                  {auth.currentUser?("Logout "+auth.currentUser.email):window.location.href = "./src/front/Login"}
+                  {auth.currentUser?("Logout "+auth.currentUser.email):"Please Log In"}
                 </NavLink>
               </NavItem>
               </Nav>

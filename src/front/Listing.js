@@ -122,6 +122,10 @@ class Listing extends React.Component {
             paymentFrequency={listing.paymentFrequency}
             latitude={listing.latitude}
             longitude={listing.longitude}
+            image1={listing.image1}
+            image2={listing.image2}
+            image3={listing.image3}
+            video={listing.videos}
           ></ListingEntry>
         );
       })
@@ -316,7 +320,12 @@ class AdditionalInfo extends React.Component {
 
           <Accordion.Collapse eventKey="2">
             <Card1.Body>
-              <GalleryContainer></GalleryContainer>
+              <GalleryContainer 
+              img1={this.props.data.image1}
+              img2={this.props.data.image2}
+              img3={this.props.data.image3}
+              video={this.props.data.video}
+              ></GalleryContainer>
             </Card1.Body>
           </Accordion.Collapse>
         </Card1>
@@ -405,13 +414,14 @@ class MapContainer extends React.Component{
 class GalleryContainer extends React.Component{
 
   render(){
+    console.log(this.props)
     return(
       <Carousel>
   <Carousel.Item interval={1000}>
     <img
       id="img1"
       className="d-block w-100"
-      src="https://www.thespruce.com/thmb/EvdqR5HNV6Ev9RBv8qGqHNE8DoM=/3636x2045/smart/filters:no_upscale()/how-to-arrange-living-room-furniture-1976578-hero-c99074dcad854b669b91652046a39203.jpg"
+      src={this.props.img1}
       alt="First slide"
     />
   </Carousel.Item>
@@ -419,7 +429,7 @@ class GalleryContainer extends React.Component{
     <img
     id="img2"
       className="d-block w-100"
-      src="https://www.thespruce.com/thmb/EvdqR5HNV6Ev9RBv8qGqHNE8DoM=/3636x2045/smart/filters:no_upscale()/how-to-arrange-living-room-furniture-1976578-hero-c99074dcad854b669b91652046a39203.jpg"
+      src={this.props.img2}
       alt={"Second slide"}
     />
   </Carousel.Item>
@@ -427,9 +437,12 @@ class GalleryContainer extends React.Component{
     <img
     id="img3"
       className="d-block w-100"
-      src="https://www.thespruce.com/thmb/EvdqR5HNV6Ev9RBv8qGqHNE8DoM=/3636x2045/smart/filters:no_upscale()/how-to-arrange-living-room-furniture-1976578-hero-c99074dcad854b669b91652046a39203.jpg"
+      src={this.props.img2}
       alt="Third slide"
     />
+  </Carousel.Item>
+  <Carousel.Item>
+  <iframe width="420" height="315" src="https://www.youtube.com/v/A6XUVjK9W4o" frameborder="0" allowfullscreen></iframe>
   </Carousel.Item>
 </Carousel>
     )

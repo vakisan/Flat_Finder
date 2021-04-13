@@ -21,7 +21,7 @@ export default class Authentication {
     auth
       .signOut()
       .then(() => {
-        // Sign-out successful.
+        alert("Sign-out successful").
         console.log("Logged out");
       })
       .catch((error) => {

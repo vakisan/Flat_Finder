@@ -20,13 +20,12 @@ const Login = (props) => {
       console.log(1);
       new User(getUserEmail(), getUserPassword()).Login();
       resetForm();
-      //return (window.location.href = "./Listing");
+      setTimeout(() => {
+        return (window.location.href = "./Listing");
+      }, 500);
     } else {
       resetForm();
     }
-    setTimeout(() => {
-      //new User().Logout()
-    }, 5000);
   }
 
   function resetForm() {

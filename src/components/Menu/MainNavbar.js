@@ -48,11 +48,6 @@ render(){
                   Login
                 </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink to="/Listing" tag={Link} className="nav-link-custom">
-                  Listing
-                </NavLink>
-              </NavItem>
             </Nav>
         </Container>
       </Navbar>
